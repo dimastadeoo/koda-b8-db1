@@ -9,6 +9,7 @@ erDiagram
     buku {
         string id_buku
         string judul_buku
+        string author
         string id_kategori
     }
     
@@ -26,12 +27,16 @@ erDiagram
         string nama_petugas
         date tgl_lahir
         string alamat
+        string jenis_kelamin
+        number no_telepon
     }
 
     peminjam {
         string id_peminjam
         string nama_peminjam
         string alamat
+        string jenis_kelamin
+        number no_telepon
     }
 
     daftar_pinjam {
