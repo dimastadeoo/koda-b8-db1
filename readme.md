@@ -3,9 +3,14 @@
 ## Berikut merupakan ERD untuk sistem perpustakaan menggunakan mermaid
 
 ```mermaid
+---
+config:
+    theme: 'default'
+    themeVariables:
+        lineColor: '#F8B229'
+---
 
 erDiagram
-    
     buku {
         string id_buku
         string judul_buku
