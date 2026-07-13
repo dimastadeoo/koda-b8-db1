@@ -63,7 +63,7 @@ erDiagram
     buku o{ -- || daftar_pinjam : mengikuti
     peminjam o{ -- || daftar_pinjam : mengikuti
     petugas o{ -- || pinjam_buku : mengikuti
-    peminjam o{ -- || pinjam_buku : mengikuti
+    peminjam || -- || pinjam_buku : mengikuti
 
 
 ```
