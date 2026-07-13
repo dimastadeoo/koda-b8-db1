@@ -46,7 +46,7 @@ erDiagram
 
     daftar_pinjam {
         string id_buku FK
-        string id_peminjam FK
+        string id_peminjaman FK
         date tgl_peminjaman
         date tgl_pengembalian
         string status
@@ -61,8 +61,8 @@ erDiagram
     buku o{ -- || kategori : mengikuti
     kategori o{ -- || rak_buku : mengikuti
     buku o{ -- || daftar_pinjam : mengikuti
-    peminjam o{ -- || daftar_pinjam : mengikuti
-    petugas o{ -- || pinjam_buku : mengikuti
+    pinjam_buku || -- o{ daftar_pinjam : mengikuti
+    petugas || -- o{ pinjam_buku : mengikuti
     peminjam || -- || pinjam_buku : mengikuti
 
 
