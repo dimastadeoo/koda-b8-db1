@@ -12,23 +12,23 @@ config:
 
 erDiagram
     buku {
-        string id_buku
+        string id_buku PK
         string judul_buku
         string author
-        string id_kategori
+        string id_kategori FK
     }
     
     kategori {
-        string id_kategori
+        string id_kategori PK
         string nama_kategori
-        string id_rak
+        string id_rak FK
     }
     rak_buku {
-        string id_rak
+        string id_rak PK
         int nomor_rak
     }
     petugas {
-        string id_petugas
+        string id_petugas PK
         string nama_petugas
         date tgl_lahir
         string alamat
@@ -37,7 +37,7 @@ erDiagram
     }
 
     peminjam {
-        string id_peminjam
+        string id_peminjam PK
         string nama_peminjam
         string alamat
         string jenis_kelamin
@@ -45,15 +45,15 @@ erDiagram
     }
 
     daftar_pinjam {
-        string id_buku
-        string id_peminjam
+        string id_buku FK
+        string id_peminjam FK
         string status
     }
 
     pinjam_buku {
-        string id_peminjaman
-        string id_petugas
-        string id_peminjam
+        string id_peminjaman PK
+        string id_petugas FK
+        string id_peminjam FK
         date tgl_peminjaman
         date tgl_pengembalian
     }
