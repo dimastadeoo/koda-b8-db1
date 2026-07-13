@@ -60,8 +60,8 @@ erDiagram
 
     buku o{ -- || kategori : mengikuti
     kategori o{ -- || rak_buku : mengikuti
-    buku o{ -- || daftar_pinjam : mengikuti
-    pinjam_buku || -- o{ daftar_pinjam : mengikuti
+    buku o{ -- || daftar_pinjam : memiliki
+    pinjam_buku || -- o{ daftar_pinjam : diampu
     petugas || -- o{ pinjam_buku : mengikuti
     peminjam || -- || pinjam_buku : mengikuti
 
